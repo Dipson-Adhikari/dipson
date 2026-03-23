@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+  <title> Typing Speed Test</title>
+
+
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <div class="logo">
+      <img src="./assets/images/logo-large.svg" alt="logo of typing test">
+    </div>
+
+    <div class="personal-best">
+      <img src="./assets/images/icon-personal-best.svg" alt="personal-best-image">
+      <span class="label">Personal Best:</span>
+      <span class="score">92WPM</span>
+    </div>
+
+  </header>
+  <div class="stats">
+    <div class="timing">
+      <div class="option">
+        <span class="label">WPM:</span>
+        <span class="value" id="stat_wpm">-</span>
+      </div>
+
+      <div class="option">
+        <span class="label">Accuracy</span>
+        <span class="value" id="stat_accuracy">-</span>
+      </div>
+
+      <div class="option time">
+        <span class="label">Time:</span>
+        <span class="value" id="stat_time">0:60</span>
+      </div>
+    </div>
+
+    <div class="difficulties">
+      <div class="tags">
+        <span class="label">Difficulty</span>
+        <span class="tag">Easy</span>
+        <span class="tag">Medium</span>
+        <span class="tag active">Hard</span>
+      </div>
+
+      <div class="tags">
+        <span class="label">Mode</span>
+        <span class="tag active">Timed(60s)</span>
+        <span class="tag">Passage</span>
+      </div>
+      
+
+    </div>
+  </div>
+
+  <div class="typebox">
+    <div class="texts blurred" id="texts">
+    </div>
+    <div class="starter"id="starter">
+      <button id="starter_button">Start Typing Text</button>
+      <p>Or click the text and start typing</p>
+    </div>
+  </div>
+  <input type="text"id="hidden-input" />
+</div>
+ <script src="./script.js"></script>
+</body>
+</html>
