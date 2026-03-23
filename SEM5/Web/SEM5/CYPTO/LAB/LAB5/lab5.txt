@@ -1,2 +1,0 @@
-Primality Testing, Totient Function and primitive root
-

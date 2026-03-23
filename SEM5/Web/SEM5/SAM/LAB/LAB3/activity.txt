@@ -1,3 +1,0 @@
-Chi-Square Test
-
-activity1: WAP to test either the given random numbers are a
