@@ -1,6 +1,21 @@
 <?php
+    session_start();
+
+    if(isset($_SESSION['userIsLogin']) && $_SESSION['userIsLogin']==true)
+        {
+            header('Location: /home.php');
+        }
+    //set cookie using php
+    // setcookie("email","dipson11@gmail.com",time() + 86400);
+
+    // $cookies =$_COOKIE;
+    // print_r($cookies);
+
+    $_SESSION['isLogin']=true;
 
     // handle post request
+
+
     if($_SERVER['REQUEST_METHOD'] === 'POST'){
     
         $formData = $_POST;
@@ -41,6 +56,7 @@
 
             // check password
             if($registerdUser[$email] === $password){
+                $_SESSION['userIsLogin'] = true;
                 header("Location: /home.php");
                 exit;
             } else {
